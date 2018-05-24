@@ -1,0 +1,12 @@
+library(plotrix)
+
+x <- c(10, 50, 60)
+lbl <- c("pra", "deep", "naidu")
+
+#png(simple_chat.png)
+percentage = round(100*x/sum(x), 1)
+
+pie3D(x,labels=lbl, explode=0.2,main="simple_chat",col = rainbow(length(x)))
+#legend("topright" , lbl, cex = 1, fill = rainbow(length(x)))
+
+dev.off()

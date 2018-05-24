@@ -1,0 +1,13 @@
+x <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+
+relation <- lm(y~x)
+#print(relation)
+#print(summary(relation))
+
+#a <- data.frame(x=100)
+#result = predict(relation,a)
+plot(x,y,main = "heght weight regression", col = "blue")
+abline(lm(y~x), cex=1.3,pch = 10, xlab= "heiht values", ylab = "weight values")
+
+#print (result)

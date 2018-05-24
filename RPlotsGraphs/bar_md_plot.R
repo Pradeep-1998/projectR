@@ -1,0 +1,1 @@
+margin.table(Titanic,1)
