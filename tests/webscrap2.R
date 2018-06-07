@@ -13,5 +13,6 @@ url <- paste(vec_url,collapse = "")
 url
 read_html(url)
 length(read_html(url))
-rvest_table <- read_html(url) %>% html_nodes("table")%>% .[1] %>% html_table(fill=TRUE ,trim = TRUE) 
+rvest_table <- read_html(url) %>% html_nodes("table")%>% .[1:6] %>% html_table(fill=TRUE ,trim = TRUE,ncol=15) 
 length(rvest_node)
+rvest_node
