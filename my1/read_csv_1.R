@@ -1,3 +1,4 @@
+# spliting & reading csv file 
 getwd()
 
 sheet1_data <- read.csv("csv_data1.csv",header=T, sep=",",quote = "\"",dec=".",comment.char = "")
@@ -13,10 +14,9 @@ nrow(sheet1_data)
 # function to divide string into group of words 
 func_parse <- function(inpStr){
    char <- toString(inpStr)
-   split_text <- strsplit(tolower(inpStr),"[^a-z]+")[[1]] #spliting text 
+   strsplit(tolower(inpStr),"[^a-z]+")[[1]] #spliting text 
    #out <-paste(readLines(con = c,n=-1L,ok = TRUE,warn = TRUE),collapse = " ")
-   split_text
-   
+  
 }
 lcount <- 0
 list_syn <- c()
